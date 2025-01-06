@@ -30,7 +30,6 @@ header h1 {
 }
 
 header img {
-    width: auto;
     height: 80px;
     object-fit: cover;
 }
@@ -56,6 +55,7 @@ footer {
 }
 
 @media (max-width: 600px) {
+    
     body {
         font-size: 14px;
     }
@@ -66,12 +66,18 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header img {
+        height: 60px;
+    }
     main p {
         font-size: 16px;
     }
 }
 
 @media (max-width: 480px) {
+    header img {
+        height: 40px;
+    }
     main p {
         font-size: 14px;
     }
