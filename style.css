@@ -1,9 +1,10 @@
 body {
     background-color: #f0f0f0;
-    background-image: url('images/bg-paper.png'); /* Replace 'images/background-pattern.jpg' with your image path */
+    background-image: url('images/bg-paper.png');
     background-repeat: repeat;    
-    background-attachment: fixed; /* Change to 'fixed' for a fixed background */
+    background-attachment: fixed;
 
+    color: #333333;
     font-family: seravek-web, sans-serif;
     font-style: normal;
     font-weight: 200;   
@@ -17,11 +18,10 @@ body {
 }
 
 header {
-    /* Apply flexbox layout to center its child elements horizontally */
     display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Align items vertically (optional) */
-    height: 250px; /* Adjust this value as needed */
+    justify-content: center;
+    align-items: center;
+    height: 250px;
 }
 
 header h1 {
@@ -31,18 +31,48 @@ header h1 {
 
 header img {
     width: auto;
-    /* Set the height to a fixed value */
-    height: 80px; /* Adjust this value as needed */
-    /* Ensure the image maintains its aspect ratio */
+    height: 80px;
     object-fit: cover;
 }
 
 main {
-    padding: 20px 0;
     text-align: center;
 }
 
 a {
-    color: #EA657C; /* Change to the desired hex code */
+    color: #EA657C;
     text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    main p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    main p {
+        font-size: 14px;
+    }
 }
