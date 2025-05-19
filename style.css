@@ -21,7 +21,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    padding: 40px 0;
 }
 
 header h1 {
